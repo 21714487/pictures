@@ -10,29 +10,30 @@
 <body onload="egnav()">
 <article>
 <script>
-
-back = big(img(source));
 var i=0;
-function source(n){
-	ret
-function changeBack(by){
-	i+=by;
-	
-function img(source,func){
-	i = document.createElement("IMG");
-	i.setAttribute("src",source);
-	if(arguments.length>1)
-		i.setAttribute("onclick",func);
-	i.style.position = "absolute";
-	return i;
-}
-function big(pic){
+background(i);
+foreground(i);
+function background(n){
+	var source = "C:\Users\markc\Desktop\pictures\backgrounds\\"+n+".jpg";
+	pic = img(source);
 	pic.style.top = "50px";
 	pic.style.left = "50px";
 	pic.style.width = "800px";
 	pic.style.height = "800px";
-	return pic;
+	document.body.appendChild(pic);
 }
+function foreground(n){
+	var source = "C:\Users\markc\Desktop\pictures\foregrounds\\"+n+".jpg";
+	pic = img(source);
+	pic.style.top = "250px";
+	pic.style.left = "250px";
+	pic.style.width = "250px";
+	pic.style.height = "250px";
+	document.body.appendChild(pic);
+}
+function changeBack(by){
+	i+=by;
+}	
 
 </script>
 </article>
